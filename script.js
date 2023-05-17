@@ -24,4 +24,10 @@ iconClose.addEventListener('click',()=> {
 
 lightModeBtn.addEventListener("click", function () {
     document.body.classList.toggle("light-mode");
+
+    if (document.body.classList.contains("light-mode")) {
+        lightModeBtn.innerHTML = "Dark";
+    } else {
+        lightModeBtn.innerHTML = "Light";
+    }
   });
