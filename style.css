@@ -15,7 +15,20 @@ body {
     background: url('background.jpg') no-repeat;
     background-size:cover;
     background-position: center;
+    --bg-color: #333;
+    --text-color: #fff;
+    --secondary-bgcolor: ;
+    --secondary-textcolor: #162938;
 }
+
+.light-mode {
+    --bg-color: #fff;
+    --text-color: #333;
+    --secondary-textcolor: #dddddd;
+    background: url('lightmodebg.jpg') no-repeat;
+    background-size:cover;
+    background-position: center;
+  }
 
 header{
     position:fixed;
@@ -33,20 +46,20 @@ header{
 .home{
     font-size: 30px;
     font-weight: 500;
-    color: #fff;
+    color: var(--text-color);
     position: absolute;
 }
 
 .logo{
     font-size:2em;
-    color:#fff;
+    color:var(--text-color);
     user-select: none;
 }
 
 .navigation a{
     position: relative;
     font-size: 1.1em;
-    color:#fff;
+    color:var(--text-color);
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
@@ -59,7 +72,7 @@ header{
     bottom:-6px;
     width: 100%;
     height: 3px;
-    background: #fff;
+    background: var(--text-color);
     border-radius: 5px;
     transform: scaleX(0);
     transition: transform .5s;
@@ -73,20 +86,36 @@ header{
     width: 130px;
     height: 50px;
     background:transparent;
-    border: 2px solid #fff;
+    border: 2px solid var(--text-color);
     outline:none;
     border-radius: 6px;
     cursor: pointer;
     font-size:1.1em;
-    color:#fff;
+    color:var(--text-color);
     font-weight: 500;
     margin-left: 40px;
     transition: .7s;
 }
 
-.navigation .btnLogin-popup:hover{
-    background: #fff;
-    color:#fff;
+.navigation .btnLogin-popup:hover, .navigation #lightmode:hover{
+    background: var(--text-color);
+    color: var(--bg-color);
+    
+}
+
+.navigation #lightmode{
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--text-color);
+    outline: none;
+    cursor: pointer;
+    font-size:1em;
+    color:var(--text-color);
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .7s;
+    border-radius: 100px;
 }
 
 .wrapper{
@@ -103,7 +132,7 @@ header{
     align-items: center;
     overflow: hidden;
     transform:scaleX(0);
-    transition:transform .5s ease, height .2s ease;
+    transition: transform .5s ease, height .2s ease;
 }
 
 .wrapper.activ-popup{
@@ -147,9 +176,9 @@ header{
     width:45px;
     height:45px;
     display: flex;
-    background: #162938;
+    background: var(--secondary-textcolor);
     font-size:2em;
-    color:#162938;
+    color: var(--secondary-textcolor);
     justify-content: center;
     align-items: center;
     border-radius: 6px;
@@ -160,7 +189,7 @@ header{
 
 .form-box h2{
     font-size: 2em;
-    color: #fff;
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -168,7 +197,7 @@ header{
     position: relative;
     width: 100%;
     height:50px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--text-color);
     margin: 30px 0;
 }
 
@@ -178,7 +207,7 @@ header{
     left:5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color:#fff;
+    color:var(--text-color);
     font-weight: 500;
     pointer-events:none;
     transition: .5s;
@@ -196,7 +225,7 @@ header{
     border: none;
     outline:none;
     font-size: 1em;
-    color:#fff;
+    color:var(--text-color);
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -205,17 +234,17 @@ header{
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #fff;
+    color: var(--text-color);
     line-height: 57px;
 }
 
 ion-icon {
-    color: #fff;
+    color: var(--text-color);
 }
 
 .remember-forgot{
     font-size: .9em;
-    color: #fff;
+    color: var(--text-color);
     font-weight: 500;
     margin: -15px 0 15px;
     display:flex;
@@ -223,12 +252,12 @@ ion-icon {
 }
 
 .remember-forgot label input{
-    accent-color: #fff;
+    accent-color: var(--text-color);
     margin-right: 3px;
 }
 
 .remember-forgot a{
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -238,12 +267,12 @@ ion-icon {
 
 .btn{
     width:100%;
-    background:#fff;
+    background:var(--text-color);
     cursor:pointer;
     outline:none;
     height: 45px;
     border-radius: 6px;
-    color: #162938;
+    color: var(--secondary-textcolor);
     border:none;
     font-size:1em;
     font-weight: 500;
@@ -251,14 +280,14 @@ ion-icon {
 
 .login-register{
     font-size:.9em;
-    color: #fff;
+    color: var(--text-color);
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .login-register p a{
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
 }
