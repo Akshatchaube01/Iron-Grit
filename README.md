@@ -1,7 +1,6 @@
 <h1>Things to do : </h1>
 
 -> Login and  Registration page using firebase authentication
--> Dark theme and light theme
 -> Building on the Services page with Blogs, Video Tutorials, Diet Plans and BMI Calculator
 -> Page for buying or adding products and accessories in shopping cart using payment gateway
 
