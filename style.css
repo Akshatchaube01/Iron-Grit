@@ -19,6 +19,7 @@ body {
     --text-color: #fff;
     --secondary-bgcolor: ;
     --secondary-textcolor: #162938;
+    --textcolor-light: #bcbcbc;
 }
 
 .light-mode {
@@ -52,6 +53,12 @@ header{
 
 .logo{
     font-size:2em;
+    color:var(--text-color);
+    user-select: none;
+}
+
+.logo-small {
+    font-size: 1.5rem;
     color:var(--text-color);
     user-select: none;
 }
@@ -295,4 +302,35 @@ ion-icon {
 
 .login-register p a:hover{
     text-decoration: underline;
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    padding-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-links li a {
+    font-size: 1em;
+    color:var(--text-color);
+    text-decoration: none;
+    font-weight: 400;
+    margin-right: 40px;
+}
+
+.footer-made-by {
+    font-size: .875em;
+    font-weight: 300;
+    color:var(--textcolor-light);
 }
