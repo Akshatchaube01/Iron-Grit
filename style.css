@@ -15,7 +15,7 @@ body {
     background: url('background.jpg') no-repeat;
     background-size:cover;
     background-position: center;
-    --bg-color: #333;
+    --bg-color: #070707;
     --text-color: #fff;
     --secondary-bgcolor: ;
     --secondary-textcolor: #162938;
@@ -28,7 +28,7 @@ body {
     --secondary-textcolor: #dddddd;
     background: url('lightmodebg.jpg') no-repeat;
     background-size:cover;
-    background-position: center;
+    background-position: bottom;
   }
 
 header{
@@ -314,6 +314,7 @@ footer{
     align-items: center;
     z-index: 99;
     padding-bottom: 20px;
+    background-color: var(--bg-color);
 }
 
 .footer-navigation {
