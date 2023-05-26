@@ -316,8 +316,15 @@ footer{
     padding-bottom: 20px;
 }
 
+.footer-navigation {
+    display: flex;
+}
+
 .footer-links {
     display: flex;
+    align-items: center;
+    margin-left: 4rem;
+    list-style: none;
 }
 
 .footer-links li a {
