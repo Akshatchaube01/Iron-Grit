@@ -15,10 +15,11 @@ body {
     background: url('background.jpg') no-repeat;
     background-size:cover;
     background-position: center;
-    --bg-color: #333;
+    --bg-color: #070707;
     --text-color: #fff;
     --secondary-bgcolor: ;
     --secondary-textcolor: #162938;
+    --textcolor-light: #bcbcbc;
 }
 
 .light-mode {
@@ -27,7 +28,7 @@ body {
     --secondary-textcolor: #dddddd;
     background: url('lightmodebg.jpg') no-repeat;
     background-size:cover;
-    background-position: center;
+    background-position: bottom;
   }
 
 header{
@@ -52,6 +53,12 @@ header{
 
 .logo{
     font-size:2em;
+    color:var(--text-color);
+    user-select: none;
+}
+
+.logo-small {
+    font-size: 1.5rem;
     color:var(--text-color);
     user-select: none;
 }
@@ -119,7 +126,6 @@ header{
 }
 
 .wrapper{
-    margin-top: 5%;
     position:relative;
     width: 400px;
     height: 440px;
@@ -295,4 +301,43 @@ ion-icon {
 
 .login-register p a:hover{
     text-decoration: underline;
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    padding-bottom: 20px;
+    background-color: var(--bg-color);
+}
+
+.footer-navigation {
+    display: flex;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+    list-style: none;
+}
+
+.footer-links li a {
+    font-size: 1em;
+    color:var(--text-color);
+    text-decoration: none;
+    font-weight: 400;
+    margin-right: 40px;
+}
+
+.footer-made-by {
+    font-size: .875em;
+    font-weight: 300;
+    color:var(--textcolor-light);
 }
